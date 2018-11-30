@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script>
+function ShowMore() {
+	var x = document.getElementById("More");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script>
+	</head>
 	<body>
-		<pre>
-		To be continued...
-		<a href="build.html">My Computer Build</a>
-		<a href="osi_physical.html">OSI Physical</a>
-		<a href="https://github.com/Bryan1998/">Repos</a>
-		</pre>
+		<div class="code">
+			This is my little GitHub site with some assignments from my cyber security class.<br/>
+			&nbsp;<a href="#" onclick="ShowMore()">My Computer Builds</a><br/>
+			<div style="display: none;" id="More">
+				&nbsp;&nbsp;&bull;<a href="builds/year1.html">Year 1</a><br/>
+				&nbsp;&nbsp;&bull;<a href="builds/year2_2500.html">Year 2 < $1000</a><br/>
+				&nbsp;&nbsp;&bull;<a href="builds/year2_2500.html">Year 2 < $2500</a><br/>
+				<br/>
+			</div>
+			&nbsp;<a href="osi_physical.html">OSI Physical</a><br/>
+			&nbsp;<a href="https://github.com/Bryan1998/">Repos</a><br/>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,45 @@
+html {
+	color: #0f0;
+	background-color: #000;
+	background-image: url("../img/binary.png");
+	background-repeat: repeat;
+	font-family: courier, monospace;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #0f0;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #333;
+}
+
+img {
+	max-width: 80px;
+	max-height: auto;
+	transition: transform .2s;
+}
+
+img:active {
+    transform: scale(5) translate(50px, 15px);
+}
+
+.code {
+	font-size: 20px;
+}
